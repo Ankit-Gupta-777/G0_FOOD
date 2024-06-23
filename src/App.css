@@ -1,0 +1,266 @@
+.banner{
+    width: 100%;
+    height: 800px;
+    background-image: url('https://thumbs.dreamstime.com/z/collection-take-away-foil-boxes-healthy-food-set-containers-meals-top-view-free-copy-space-164637874.jpg?ct=jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    position: relative;
+}
+.drawer{
+    display: none;
+}
+ .brand{
+    font-size: 50px;
+    text-decoration: none;
+    color: #fff;
+ }
+
+.nav_menu_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    
+}
+#navbar_container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.brand:hover{
+    color: #aaa;
+}
+.link{
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 5px;
+    color: #fff;
+}
+.link:hover{
+ border: 2px solid #000;
+ background-color: #fff;
+ color: #000;
+}
+.connect_link{
+    text-decoration: none;
+}
+.icons{
+    padding: 5px;
+    border-radius: 50%;
+   box-shadow: 5px 5px 10px 10px  #555;
+}
+
+
+#navbar_left{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.categories_heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.categories_list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.category_buttons{
+    border-radius: 30px;
+    background-color: #ccc;
+    text-decoration: none;
+    padding: 10px;
+    color: #777;
+    color: #444;
+}
+.category_buttons:hover{
+    background-color: rgb(18, 146, 18);
+    color: #fff;
+}
+.meal_description{
+    color: #000;
+    font-weight: bold;
+}
+.menu_items_block{
+    margin-top:50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns:45% 45%;   
+    justify-content: center;
+    align-content: center; 
+    row-gap: 25px;
+    column-gap: 10px;
+
+  
+}
+.card_block{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    padding: 0px;
+    box-shadow: 5px 5px 10px #ccc;
+    width: 100%;
+}
+.card_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+
+}
+.card_text{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 0px;
+}
+.card_btn{
+    padding: 10px;
+    font-size: small;
+    height: 30%;
+    width: 40%;
+}
+.card_image{
+    height: 100%;
+    width: 20%;
+    border-radius: 50%;
+}
+
+.banner_card_container{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.banner_card{
+    width: 80%;
+    background: none;
+    color: #fff;
+    border: none;
+    box-shadow: 5px 5px 10px #444;
+}
+.banner_card_info_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner_card_info{
+    display: flex;
+    flex-direction: column;
+}
+.banner_card_info_span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.shop_now{
+    border-radius: 30px;
+    height: 40px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(27, 146, 27);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.connect{
+    margin: 20px auto;
+
+}
+.drawer_Link{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    
+}
+
+/*/////////////////////////////////////// MEDIA QUERIES ///////////////////////////////////////////*/
+@media only screen and (max-width: 1200px) {
+    .brand{
+        font-size: 30px;
+    }
+    .categories_list{
+        gap: 10px;
+    }
+    .category_buttons{
+        font-size: 10px;
+        font-weight: bold;
+
+    }
+    
+   
+  }
+  @media only screen and (max-width: 991px) {
+    .banner{
+        height: 700px;
+    }
+   .menu_items_block{
+    grid-template-columns: 100%;
+   }
+   .drawer{
+    display: block;
+
+}
+.responsive{
+    display: none;
+}
+
+    
+   
+  }
+
+@media only screen and (max-width: 600px) {
+   .brand{
+    font-size: 35px;
+   }
+    .category_buttons{
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .h1{
+        font-size: 30px;
+     }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .brand{
+        font-size: 30px;
+     }
+     .categories_list{
+        width: 100%;
+       display: grid;
+       grid-template-columns: 50% 50%;
+     }
+     .h1{
+        font-size: 20px;
+     }
+     .banner_card_info_span{
+        font-size: 20px;
+     }
+     .shop_now{
+        font-size: 15px;
+     }
+     .card_block{
+        flex-direction: column;
+     }
+     .card_image{
+        width: 100%;
+     }
+   
+  }
+
+  @media only screen and (max-width: 400px) {
+    .brand{
+        font-size: 25px;
+    }
+  }
